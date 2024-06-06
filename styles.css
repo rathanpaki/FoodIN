@@ -159,7 +159,7 @@ header .nav-link:hover {
 }
 
 .quote .man {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   /* margin-bottom: 0.5rem; */
 }
@@ -202,7 +202,34 @@ header .nav-link:hover {
   object-fit: cover;
 }
 
+.foods .card .btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+}
 
+.newsletter .hover-background {
+  background-image: url('./img/bg-3.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: background-position 0.3s ease-in-out;
+  height: 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.newsletter .hover-background:hover {
+  background-position: bottom right;
+}
 
 .newsletter h2 {
   font-size: 3rem;
