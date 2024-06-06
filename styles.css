@@ -1,0 +1,335 @@
+:root {
+  --primary-color: #a82c4b;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* background-color: var(--secondary-color); */
+  background-image: url(./img/bg-1.jpg);
+  padding: 1rem 0;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: right;
+}
+
+header .navbar {
+  background-color: var(--white-color);
+}
+
+header .nav-item .nav-link {
+  color: var(--primary-color);
+  margin-left: 1.5rem;
+  font-family: var(--secondary-font);
+  transition: color 0.3s;
+}
+
+header .nav-link:hover {
+  color: var(--black-color);
+}
+.hero {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  padding: 5rem 0;
+  text-align: center;
+  height: 100%;
+}
+
+.hero h1 {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.hero img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.stats {
+  padding: 2rem 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.stats h2 {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stats p {
+  margin-bottom: 0;
+}
+
+.about,
+.handmade,
+.quote,
+.foods,
+.newsletter {
+  padding: 4rem 0;
+}
+
+.about h2,
+.quote p,
+.foods h2,
+.newsletter h2 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.handmade h2 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.handmade ul {
+  list-style: none;
+  padding: 0;
+}
+
+.handmade ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.handmade ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--third-color);
+  font-size: 1rem;
+}
+
+.quote {
+  /* background-color: var(--primary-color); */
+  background-image: url(./img/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+.quote .man {
+  font-size: 3rem;
+  font-weight: bold;
+  /* margin-bottom: 0.5rem; */
+}
+
+.quote .man1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+.quote .btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.foods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.foods .card {
+  border: none;
+  transition: transform 0.3s;
+  margin-bottom: 2rem;
+}
+
+.foods .card:hover {
+  transform: scale(1.05);
+}
+
+.foods .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+.newsletter h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--text-gray);
+  min-width: 250px;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  height: 100%;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--white-color);
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--third-color);
+}
+
+footer .reg a {
+  text-decoration: none;
+
+}
+
+footer .social-links a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+footer .social-links a:hover {
+  color: var(--third-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about h2,
+  .handmade h2,
+  .quote p,
+  .foods h2,
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .handmade .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter input {
+    margin-right: 0;
+  }
+}
+
+
+
+
